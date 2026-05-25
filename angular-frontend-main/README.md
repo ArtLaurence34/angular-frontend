@@ -16,7 +16,7 @@ Angular 21 authentication frontend application.
 ### Installation
 1. Clone the repository
    ```bash
-   git clone https://github.com/TheresaFCastillo/angular-frontend.git
+   git clone https://github.com/ArtLaurence34/angular-frontend.git
    cd angular-frontend
    ```
 
