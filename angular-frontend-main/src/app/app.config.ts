@@ -9,7 +9,6 @@ import { fakeBackendInterceptor } from './services/fake-backend';
 // SET TO true FOR STAGE A (Fake Backend Testing)
 // SET TO false FOR STAGE B (Live Backend)
 const useFakeBackend = false;
-
 export const appConfig: ApplicationConfig = {
     providers: [
         provideRouter(routes),
