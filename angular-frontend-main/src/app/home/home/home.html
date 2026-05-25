@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h4 class="card-title">Welcome, {{ account.firstName }} {{ account.lastName }}!</h4>
+                    <p>Role: <strong>{{ account.role }}</strong></p>
+                    <p>Email: {{ account.email }}</p>
+                    <div class="mt-3">
+                        <a *ngIf="account.role === 'Admin'" routerLink="/admin" class="btn btn-warning me-2">
+                            Admin Panel
+                        </a>
+                        <button (click)="accountService.logout()" class="btn btn-danger">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
